@@ -103,33 +103,33 @@ li{
     list-style: none;
 }
 /* relation for checkbox popup */
-#cart-con{
+#cart-con {
     display: none;
 }
+
 .side-popup {
     position: fixed;
-    top: 0;
-    right: -400px; 
+    top: 100px;
+    right: -400px;
     width: 400px;
-    height: 60vh; 
+    height: 60vh;
     background-color: white;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    transition: right 0.3s ease-in-out; 
-    z-index: 1000; 
-    overflow-y: auto; 
-    display: none;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
 }
-#cart-con:checked ~ .side-popup{
-    right: 0;
-    display: block;
+
+#cart-con:checked ~ .side-popup {
+    right: 0px;
 }
-#x-icon{
-    display: none;
-}
-#x-icon:checked ~ .side-popup{
-    right: -400px;
-    display: none;
+
+/* Close button styling */
+.x-icon {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 
 /* nav bar - 2 */
