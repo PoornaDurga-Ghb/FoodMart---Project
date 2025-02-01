@@ -5,21 +5,22 @@
 }
 body{
     font-family: "Open Sans", serif;
+    letter-spacing: 2px;
 }
+/* nav bar - 1  */
 .main-header{
     position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 .logo-container > .logo{
     object-fit: cover;
-    width: 250px;
-    height: 100px;
+    width: fit-content;
+    margin-top: 26px;
 }
-.logo-container{
-    /* width: 300px; */
-}
+
 .header-container-1{
     display: flex;
     justify-content: center;
@@ -29,6 +30,10 @@ body{
     border-radius: 15px;
     padding-right: 10px;
     margin: 25px;
+    height: 60px;
+}
+.categories option{
+    color: lightgray;
 }
 #categories, #search{
     background-color: transparent;
@@ -43,7 +48,7 @@ body{
 }
 .header-container-2{
     display: flex;
-    gap: 15px;
+    gap: 35px;
     margin: 25px;
     justify-content: space-evenly;
 }
@@ -53,11 +58,107 @@ body{
     font-size: 1rem;
     color: darkslategray;
 }
-.header-icons{
-    /* height: 500px; */
-}
-.header-icons svg{
-    background-color: lightgrey;
+.header-icon1 svg{
+    background-color: rgb(236, 232, 232);
     border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    padding: 8px;
+}
+.header-icon2 img{
+    background-color: rgb(236, 232, 232);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    padding: 8px;
+}
+/* off canvas container pop up */
+.popup-value{
+    display: flex;
+    justify-content: space-between;
+}
+.popup-value span:nth-child(1){
+    color: rgb(88, 128, 6);
+    padding: 5px;
+    letter-spacing: 2px;
+}
+.popup-value span:nth-child(2){
+    border-radius: 50%;
+    background-color: rgb(123, 168, 33);
+    padding: 8px;
+    color: white;
+}
+.cart-list li span{
+    display: flex;
+    justify-content: end;
+    align-items: end; 
+}
+.cart-list li{
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
+/* relation for checkbox popup */
+#cart-con{
+    display: none;
+}
+.side-popup {
+    position: fixed;
+    top: 0;
+    right: -400px; 
+    width: 400px;
+    height: 60vh; 
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease-in-out; 
+    z-index: 1000; 
+    overflow-y: auto; 
+    display: none;
+}
+#cart-con:checked ~ .side-popup{
+    right: 0;
+    display: block;
+}
+#x-icon{
+    display: none;
+}
+#x-icon:checked ~ .side-popup{
+    right: -400px;
+    display: none;
 }
 
+/* nav bar - 2 */
+.sub-header a{
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 1rem;
+}
+.sub-header select:first-child{
+    background-color: rgb(235, 233, 233);
+    border: none;
+    font-size: 1rem;
+    color: lightslategray;
+    padding: 10px;
+}
+.sub-header select{
+    border: none;
+    font-size: 1rem;
+    color: lightslategray;
+    background-color: transparent;
+}
+.sub-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.sub-header select option{
+    padding: 5px;
+}
