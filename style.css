@@ -5,8 +5,13 @@
     font-family: "Nunito", sans-serif ;
 }
 body{
-    font-family: "Open Sans", serif;
     letter-spacing: 2px;
+    overflow-x: hidden;
+    width: 100%;
+}
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 /* nav bar - 1  */
 .main-header{
@@ -15,6 +20,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    overflow: hidden;
 }
 .logo-container > .logo{
     object-fit: cover;
@@ -1391,9 +1397,8 @@ h1,.h4,h2{
     letter-spacing: 1;
 }
 
-
-
 /* responsive for mobile phones */
+
 @media screen and (max-width : 550px) {
     .header-container-1{
         display: none;
@@ -1416,12 +1421,44 @@ h1,.h4,h2{
         gap: 10px;
         width: 90%;
     }
+    .sub-category-section-1,
+    .sub-category-section-2,
+    .sub-category-section-3,
+    .sub-category-section-4,
+    .sub-category-section-5,
+    .sub-category-section-6{
+        width: 250px;
+        height: 150px !important;
+    }
+    .category-sections{
+        display: flex;
+        flex-direction: column;
+    }
+    .category-and-buttons{
+        width: 80%;
+    }
     .text-of-image1-con{
         width: 100%;
         border-radius: 10px;
         font-size: 1rem;
         padding: 20px;
         line-height: 1.5;
+    }
+    .veggies-con{
+        overflow: hidden;
+        width: 85%;
+    }
+    .text-of-image2-con{
+        width: 75%;
+    }
+    .fg-image-2 img {
+        width: 187px;
+    }
+    .text-of-image3-con{
+        width: 75%;
+    }
+    .fg-image-3 img {
+        width: 205px;
     }
     .text-of-image1-con p:first-child{
         color: orange;
@@ -1453,7 +1490,7 @@ h1,.h4,h2{
     }
     .flex-1-con .fg-image-1 img{
         width: 250px;
-        height: 250px;
+        height: 180px;
     }
     .fg-image-con{
         display: grid;
@@ -1508,20 +1545,30 @@ h1,.h4,h2{
     .chocolate-and-muffins{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 10px;
         padding: 10px;
     }
     .dark-chocolate{
-        display: flex;
-        border-radius: 20px;
-        height: fit-content;
-        padding: 20px;
+        padding: 10px;
+        width: 83%;
+    }
+    .choco-img{
+        width: 250px;
+        overflow: hidden;
+    }
+    .choco-text{
+        width: 200px;
     }
     .muffins-creamy{
-        display: flex;
-        border-radius: 20px;
-        padding: 20px;
-        height: fit-content;
+        padding: 10px;
+        width: 83%;
+    }
+    .muffins-img{
+        width: 200px;
+        overflow: hidden;
+    }
+    .muff-text{
+        width: 200px;
     }
     .best-selling-sub-section{
         margin: 10px;
@@ -1635,7 +1682,7 @@ h1,.h4,h2{
     width: 95%;
 }
 .footer{
-    width: 90%;
+    width: 100%;
 }
 }
 
@@ -1759,7 +1806,6 @@ h1,.h4,h2{
         display: none;
     }
     .chocolate-and-muffins{
-        display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 10px;
