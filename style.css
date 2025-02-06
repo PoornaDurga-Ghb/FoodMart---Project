@@ -1444,6 +1444,12 @@ h1,.h4,h2{
         padding: 20px;
         line-height: 1.5;
     }
+    body{
+        overflow-x: hidden;
+    }
+    .hero-section{
+        overflow-x: hidden;
+    }
     .veggies-con{
         overflow: hidden;
         width: 85%;
