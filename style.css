@@ -1727,19 +1727,21 @@ h1,.h4,h2{
     }
     .text-of-image1-con p:first-child{
         color: orange;
-        font-size: 1.5rem;
+        font-size: 1rem !important; 
         font-weight: 600;
     }
     .text-of-image1-con p:nth-child(2){
         color: black;
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 700;
-        letter-spacing: 2;
+    }
+    .text-of-image1-con p:nth-child(3){
+        font-size: 0.7rem;
     }
     .text-of-image1-con p:nth-child(4){
         color: black;
-        font-size: 20px;
-        letter-spacing: 2;
+        font-size: 12px;
+        letter-spacing: 1;
         border: 2px solid gray;
         color: rgb(26, 25, 25);
         width: fit-content;
@@ -1754,7 +1756,8 @@ h1,.h4,h2{
         align-items: end;
     }
     .flex-1-con .fg-image-1 img{
-        display: none;
+        width: 250px;
+        height: 250px;
     }
     .fg-image-con{
         display: grid;
