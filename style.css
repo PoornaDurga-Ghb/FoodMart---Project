@@ -1754,8 +1754,7 @@ h1,.h4,h2{
         align-items: end;
     }
     .flex-1-con .fg-image-1 img{
-        width: 250px;
-        height: 250px;
+        display: none;
     }
     .fg-image-con{
         display: grid;
